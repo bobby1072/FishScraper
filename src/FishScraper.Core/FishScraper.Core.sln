@@ -4,6 +4,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishScraper.Core.Api", "Fis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishScraper.Core.Domain.Services", "FishScraper.Core.Domain.Services\FishScraper.Core.Domain.Services.csproj", "{55418642-8441-448B-BBAE-C782B5A68CDF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Submodules", "Submodules", "{4B3D0616-474D-49C7-8507-AC0F5B851CD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.Common.Api.Helpers", "..\Submodules\BT\src\BT.Common\BT.Common.Api.Helpers\BT.Common.Api.Helpers.csproj", "{356AC13E-8B5B-482F-95C9-21094F580A09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.Common.Helpers", "..\Submodules\BT\src\BT.Common\BT.Common.Helpers\BT.Common.Helpers.csproj", "{5A793278-2686-44D0-AA8B-6F207E8BE5D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +24,17 @@ Global
 		{55418642-8441-448B-BBAE-C782B5A68CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55418642-8441-448B-BBAE-C782B5A68CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55418642-8441-448B-BBAE-C782B5A68CDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{356AC13E-8B5B-482F-95C9-21094F580A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{356AC13E-8B5B-482F-95C9-21094F580A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{356AC13E-8B5B-482F-95C9-21094F580A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{356AC13E-8B5B-482F-95C9-21094F580A09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A793278-2686-44D0-AA8B-6F207E8BE5D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A793278-2686-44D0-AA8B-6F207E8BE5D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A793278-2686-44D0-AA8B-6F207E8BE5D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A793278-2686-44D0-AA8B-6F207E8BE5D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{356AC13E-8B5B-482F-95C9-21094F580A09} = {4B3D0616-474D-49C7-8507-AC0F5B851CD8}
+		{5A793278-2686-44D0-AA8B-6F207E8BE5D0} = {4B3D0616-474D-49C7-8507-AC0F5B851CD8}
 	EndGlobalSection
 EndGlobal
