@@ -10,6 +10,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.Common.Api.Helpers", "..
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.Common.Helpers", "..\Submodules\BT\src\BT.Common\BT.Common.Helpers\BT.Common.Helpers.csproj", "{5A793278-2686-44D0-AA8B-6F207E8BE5D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.Common.Http", "..\Submodules\BT\src\BT.Common\BT.Common.Http\BT.Common.Http.csproj", "{42BE95FD-8565-4C7F-96D3-9F5F941433D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.Common.Polly", "..\Submodules\BT\src\BT.Common\BT.Common.Polly\BT.Common.Polly.csproj", "{A31DE6EC-E795-4595-BFA6-B6221060F88A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,9 +36,19 @@ Global
 		{5A793278-2686-44D0-AA8B-6F207E8BE5D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A793278-2686-44D0-AA8B-6F207E8BE5D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A793278-2686-44D0-AA8B-6F207E8BE5D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42BE95FD-8565-4C7F-96D3-9F5F941433D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42BE95FD-8565-4C7F-96D3-9F5F941433D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42BE95FD-8565-4C7F-96D3-9F5F941433D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42BE95FD-8565-4C7F-96D3-9F5F941433D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A31DE6EC-E795-4595-BFA6-B6221060F88A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A31DE6EC-E795-4595-BFA6-B6221060F88A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A31DE6EC-E795-4595-BFA6-B6221060F88A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A31DE6EC-E795-4595-BFA6-B6221060F88A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{356AC13E-8B5B-482F-95C9-21094F580A09} = {4B3D0616-474D-49C7-8507-AC0F5B851CD8}
 		{5A793278-2686-44D0-AA8B-6F207E8BE5D0} = {4B3D0616-474D-49C7-8507-AC0F5B851CD8}
+		{42BE95FD-8565-4C7F-96D3-9F5F941433D7} = {4B3D0616-474D-49C7-8507-AC0F5B851CD8}
+		{A31DE6EC-E795-4595-BFA6-B6221060F88A} = {4B3D0616-474D-49C7-8507-AC0F5B851CD8}
 	EndGlobalSection
 EndGlobal
