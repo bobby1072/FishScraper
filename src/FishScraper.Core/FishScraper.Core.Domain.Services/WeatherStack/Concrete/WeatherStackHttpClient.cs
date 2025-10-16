@@ -1,4 +1,5 @@
-﻿using FishScraper.Core.Common.Configuration;
+﻿using BT.Common.Http.Extensions;
+using FishScraper.Core.Common.Configuration;
 using FishScraper.Core.Domain.Services.WeatherStack.Abstract;
 using Microsoft.Extensions.Logging;
 
@@ -17,8 +18,14 @@ internal sealed class WeatherStackHttpClient: IWeatherStackHttpClient
         _weatherStackConfig = weatherStackConfig;
         _logger = logger;
     }
-    public Task GetCurrentWeatherAsync(decimal latitude, decimal longitude, CancellationToken ct = default)
+    public async Task GetCurrentWeatherAsync(decimal latitude, decimal longitude, CancellationToken ct = default)
     {
+        var response = await _weatherStackConfig.BaseUrl
+            .AppendPathSegment("current")
+            .AppendQueryParameter("access_key", _weatherStackConfig.ApiKey)
+            .AppendQueryParameter("query", $"{latitude},{longitude}")
+            .GetStringAsync(_client, ct);
+        
         throw new NotImplementedException();
     }
 }

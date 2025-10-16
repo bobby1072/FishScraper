@@ -1,4 +1,5 @@
 ﻿using BT.Common.Helpers;
+using BT.Common.Helpers.Extensions;
 using BT.Common.Http.Extensions;
 using FishScraper.Core.Common.Configuration;
 using FishScraper.Core.Domain.Services.WeatherStack.Abstract;
@@ -21,7 +22,8 @@ public static class FishScraperDomainServiceCollectionExtensions
         
         services
             .AddJsonLogging()
-            .AddHttpClient();
+            .AddHttpClient()
+            .ConfigureSingletonOptions<WeatherStackConfig>(foundWeatherStackConfigSection);
         
         services
             .AddHttpClientWithResilience<IWeatherStackHttpClient, WeatherStackHttpClient>(
