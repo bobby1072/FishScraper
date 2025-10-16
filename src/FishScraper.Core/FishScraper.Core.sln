@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.Common.Polly", "..\Submo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishScraper.Core.Schemas", "FishScraper.Core.Schemas\FishScraper.Core.Schemas.csproj", "{95942AF4-357A-4674-94E8-E708A922F21F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishScraper.Core.Common", "FishScraper.Core.Common\FishScraper.Core.Common.csproj", "{F1A6A70E-AC12-4C7D-98A2-C74812096E45}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{95942AF4-357A-4674-94E8-E708A922F21F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95942AF4-357A-4674-94E8-E708A922F21F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95942AF4-357A-4674-94E8-E708A922F21F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1A6A70E-AC12-4C7D-98A2-C74812096E45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1A6A70E-AC12-4C7D-98A2-C74812096E45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1A6A70E-AC12-4C7D-98A2-C74812096E45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1A6A70E-AC12-4C7D-98A2-C74812096E45}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{356AC13E-8B5B-482F-95C9-21094F580A09} = {4B3D0616-474D-49C7-8507-AC0F5B851CD8}

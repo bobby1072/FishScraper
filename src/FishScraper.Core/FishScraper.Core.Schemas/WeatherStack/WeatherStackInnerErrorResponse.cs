@@ -1,4 +1,4 @@
-namespace FishScraper.Core.Schemas.WeatherStackApi;
+namespace FishScraper.Core.Schemas.WeatherStack;
 
 public sealed record WeatherStackInnerErrorResponse
 {

@@ -12,6 +12,9 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\Submodules\BT\src\BT.Common\BT.Common.Helpers\BT.Common.Helpers.csproj" />
+      <ProjectReference Include="..\..\Submodules\BT\src\BT.Common\BT.Common.Http\BT.Common.Http.csproj" />
+      <ProjectReference Include="..\FishScraper.Core.Common\FishScraper.Core.Common.csproj" />
+      <ProjectReference Include="..\FishScraper.Core.Schemas\FishScraper.Core.Schemas.csproj" />
     </ItemGroup>
 
 </Project>
