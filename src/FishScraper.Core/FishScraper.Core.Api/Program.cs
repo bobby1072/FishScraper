@@ -1,6 +1,7 @@
 using System.Text.Json;
 using BT.Common.Api.Helpers.Extensions;
 using BT.Common.Helpers;
+using FishScraper.Core.Domain.Services.Extensions;
 
 var localLogger = LoggingHelper.CreateLogger();
 
@@ -11,7 +12,7 @@ try
     var builder = WebApplication.CreateBuilder(args);
     builder.WebHost.ConfigureKestrel(options => options.AddServerHeader = false);
 
-    builder.Services.AddJsonLogging();
+    builder.Services.AddFishScraperApplication();
 
     builder
         .Services.AddControllers()

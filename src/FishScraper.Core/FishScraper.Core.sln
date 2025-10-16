@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.Common.Http", "..\Submod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT.Common.Polly", "..\Submodules\BT\src\BT.Common\BT.Common.Polly\BT.Common.Polly.csproj", "{A31DE6EC-E795-4595-BFA6-B6221060F88A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishScraper.Core.Schemas", "FishScraper.Core.Schemas\FishScraper.Core.Schemas.csproj", "{95942AF4-357A-4674-94E8-E708A922F21F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,6 +46,10 @@ Global
 		{A31DE6EC-E795-4595-BFA6-B6221060F88A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A31DE6EC-E795-4595-BFA6-B6221060F88A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A31DE6EC-E795-4595-BFA6-B6221060F88A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95942AF4-357A-4674-94E8-E708A922F21F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95942AF4-357A-4674-94E8-E708A922F21F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95942AF4-357A-4674-94E8-E708A922F21F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95942AF4-357A-4674-94E8-E708A922F21F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{356AC13E-8B5B-482F-95C9-21094F580A09} = {4B3D0616-474D-49C7-8507-AC0F5B851CD8}
