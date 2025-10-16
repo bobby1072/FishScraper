@@ -23,12 +23,17 @@ public static class FishScraperDomainServiceCollectionExtensions
         services
             .AddJsonLogging()
             .AddHttpClient()
+            .AddMemoryCache(opts =>
+            {
+                opts.SizeLimit = 10000;
+            })
             .ConfigureSingletonOptions<WeatherStackConfig>(foundWeatherStackConfigSection);
         
         services
             .AddHttpClientWithResilience<IWeatherStackHttpClient, WeatherStackHttpClient>(
                 foundWeatherStackConfigSection.Get<WeatherStackConfig>() ?? throw new ApplicationException("Missing weather stack config")
-            );
+            )
+            .AddScoped<IWeatherStackProcessingManager, WeatherStackProcessingManager>();
         
         return services;
     }
