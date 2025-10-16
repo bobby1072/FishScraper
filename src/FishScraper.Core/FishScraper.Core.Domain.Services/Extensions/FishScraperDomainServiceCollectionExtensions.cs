@@ -23,10 +23,6 @@ public static class FishScraperDomainServiceCollectionExtensions
         services
             .AddJsonLogging()
             .AddHttpClient()
-            .AddMemoryCache(opts =>
-            {
-                opts.SizeLimit = 10000;
-            })
             .ConfigureSingletonOptions<WeatherStackConfig>(foundWeatherStackConfigSection);
         
         services
