@@ -1,6 +1,8 @@
-﻿namespace FishScraper.Core.Domain.Services.WeatherStack.Abstract;
+﻿using FishScraper.Core.Schemas.WeatherStack;
+
+namespace FishScraper.Core.Domain.Services.WeatherStack.Abstract;
 
 internal interface IWeatherStackHttpClient
 {
-    Task GetCurrentWeatherAsync(decimal latitude, decimal longitude, CancellationToken ct = default);
+    Task<WeatherStackResponse> GetCurrentWeatherAsync(decimal latitude, decimal longitude, CancellationToken ct = default);
 }
