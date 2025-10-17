@@ -1,6 +1,7 @@
 using System.Text.Json;
 using BT.Common.Api.Helpers.Extensions;
 using BT.Common.Helpers;
+using FishScraper.Core.Api.Middlewares;
 using FishScraper.Core.Domain.Services.Extensions;
 
 var localLogger = LoggingHelper.CreateLogger();
@@ -42,7 +43,9 @@ try
 
     app.UseAuthorization();
 
-    app.UseCorrelationIdMiddleware();
+    app
+        .UseMiddleware<ExceptionHandlingMiddleware>()
+        .UseCorrelationIdMiddleware();
 
     app.MapControllers();
 
