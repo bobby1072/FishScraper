@@ -1,5 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishScraper.Core.Api", "FishScraper.Core.Api\FishScraper.Core.Api.csproj", "{378501FB-FA27-4C8D-921E-C107BAF8740A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishScraper.Core.Domain.Services", "FishScraper.Core.Domain.Services\FishScraper.Core.Domain.Services.csproj", "{55418642-8441-448B-BBAE-C782B5A68CDF}"
@@ -17,6 +20,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishScraper.Core.Schemas", "FishScraper.Core.Schemas\FishScraper.Core.Schemas.csproj", "{95942AF4-357A-4674-94E8-E708A922F21F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishScraper.Core.Common", "FishScraper.Core.Common\FishScraper.Core.Common.csproj", "{F1A6A70E-AC12-4C7D-98A2-C74812096E45}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mocks", "Mocks", "{A0486DB4-F8E7-4723-8C34-A1291DF31F02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishScraper.Core.WeatherStack.Mock.Api", "FishScraper.Core.WeatherStack.Mock.Api\FishScraper.Core.WeatherStack.Mock.Api.csproj", "{E68B3534-3FDC-44BE-8D03-1C9499F4BFA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishScraper.Core.Aspire", "FishScraper.Core.Aspire\FishScraper.Core.Aspire.csproj", "{0A554BF5-366D-4750-BF5C-12F64F0880CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -56,11 +65,23 @@ Global
 		{F1A6A70E-AC12-4C7D-98A2-C74812096E45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1A6A70E-AC12-4C7D-98A2-C74812096E45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1A6A70E-AC12-4C7D-98A2-C74812096E45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E68B3534-3FDC-44BE-8D03-1C9499F4BFA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E68B3534-3FDC-44BE-8D03-1C9499F4BFA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E68B3534-3FDC-44BE-8D03-1C9499F4BFA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E68B3534-3FDC-44BE-8D03-1C9499F4BFA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A554BF5-366D-4750-BF5C-12F64F0880CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A554BF5-366D-4750-BF5C-12F64F0880CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A554BF5-366D-4750-BF5C-12F64F0880CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A554BF5-366D-4750-BF5C-12F64F0880CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{356AC13E-8B5B-482F-95C9-21094F580A09} = {4B3D0616-474D-49C7-8507-AC0F5B851CD8}
 		{5A793278-2686-44D0-AA8B-6F207E8BE5D0} = {4B3D0616-474D-49C7-8507-AC0F5B851CD8}
 		{42BE95FD-8565-4C7F-96D3-9F5F941433D7} = {4B3D0616-474D-49C7-8507-AC0F5B851CD8}
 		{A31DE6EC-E795-4595-BFA6-B6221060F88A} = {4B3D0616-474D-49C7-8507-AC0F5B851CD8}
+		{E68B3534-3FDC-44BE-8D03-1C9499F4BFA2} = {A0486DB4-F8E7-4723-8C34-A1291DF31F02}
 	EndGlobalSection
 EndGlobal

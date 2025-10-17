@@ -1,6 +1,6 @@
 namespace FishScraper.Core.Schemas.WeatherStack.Response;
 
-public sealed record WeatherStackAstro
+public sealed record WeatherStackAstroResponse
 {
     public required string Sunrise { get; init; }
     public required string Sunset { get; init; }

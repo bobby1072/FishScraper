@@ -2,7 +2,7 @@ using System.Text.Json.Serialization;
 
 namespace FishScraper.Core.Schemas.WeatherStack.Response;
 
-public sealed record WeatherStackAirQuality
+public sealed record WeatherStackAirQualityResponse
 {
     public required string Co { get; init; }
 

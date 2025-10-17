@@ -12,6 +12,7 @@ internal static class WeatherStackHttpRequestBuilderExtensions
     private static readonly JsonSerializerOptions _weatherStackJsonSerializerOptions = new (){ PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower };
     
     public static async Task<T?> GetWeatherStackJsonAsync<T>(this HttpRequestBuilder httpRequestBuilder, HttpClient client, ILogger? logger = null, CancellationToken token = default)
+        where T : class
     {
         try
         {

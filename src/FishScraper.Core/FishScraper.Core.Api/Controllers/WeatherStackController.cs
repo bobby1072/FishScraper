@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FishScraper.Core.Api.Controllers;
 
-public sealed class WeatherStackController: BaseController
+public sealed class WeatherStackController : BaseController
 {
     private readonly IWeatherStackProcessingManager _weatherStackProcessingManager;
 
@@ -14,15 +14,18 @@ public sealed class WeatherStackController: BaseController
     {
         _weatherStackProcessingManager = weatherStackProcessingManager;
     }
-    [HttpPost("CurrentWeather")]
-    public async Task<ActionResult<WebOutcome<WeatherStackResponse>>> GetCurrentWeather(
-        [FromBody] GetCurrentWeatherInputParams getCurrentWeatherInputParams, CancellationToken ct = default)
-    {
-        var result = await _weatherStackProcessingManager.GetCurrentWeatherAsync(getCurrentWeatherInputParams, ct);
 
-        return new WebOutcome<WeatherStackResponse>
-        {
-            Data = result
-        };
+    [HttpPost("CurrentWeather")]
+    public async Task<ActionResult<WebOutcome<WeatherStackCurrentResponse>>> GetCurrentWeather(
+        [FromBody] GetCurrentWeatherInputParams getCurrentWeatherInputParams,
+        CancellationToken ct = default
+    )
+    {
+        var result = await _weatherStackProcessingManager.GetCurrentWeatherAsync(
+            getCurrentWeatherInputParams,
+            ct
+        );
+
+        return new WebOutcome<WeatherStackCurrentResponse> { Data = result };
     }
 }

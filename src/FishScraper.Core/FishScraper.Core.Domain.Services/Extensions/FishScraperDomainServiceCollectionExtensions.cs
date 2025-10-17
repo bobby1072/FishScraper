@@ -23,7 +23,8 @@ public static class FishScraperDomainServiceCollectionExtensions
         services
             .AddJsonLogging()
             .AddHttpClient()
-            .ConfigureSingletonOptions<WeatherStackConfig>(foundWeatherStackConfigSection);
+            .ConfigureSingletonOptions<WeatherStackConfig>(foundWeatherStackConfigSection)
+            .AddHealthChecks();
         
         services
             .AddHttpClientWithResilience<IWeatherStackHttpClient, WeatherStackHttpClient>(

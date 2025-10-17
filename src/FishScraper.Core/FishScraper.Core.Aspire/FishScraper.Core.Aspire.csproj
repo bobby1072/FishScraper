@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Sdk Name="Aspire.AppHost.Sdk" Version="9.5.1"/>
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <UserSecretsId>1389f4ad-8099-413d-b300-bac3fcf27bbc</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Aspire.Hosting.AppHost" Version="9.5.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\FishScraper.Core.Api\FishScraper.Core.Api.csproj" />
+      <ProjectReference Include="..\FishScraper.Core.WeatherStack.Mock.Api\FishScraper.Core.WeatherStack.Mock.Api.csproj" />
+    </ItemGroup>
+
+</Project>

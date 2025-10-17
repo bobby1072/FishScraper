@@ -1,6 +1,6 @@
 namespace FishScraper.Core.Schemas.WeatherStack.Response;
 
-public sealed record WeatherStackLocation
+public sealed record WeatherStackLocationResponse
 {
     public required string Name { get; init; }
     public required string Country { get; init; }
