@@ -18,7 +18,7 @@ internal sealed class WeatherStackProcessingManager: IWeatherStackProcessingMana
         _logger = logger;
     }
 
-    public async Task<WeatherStackResponse> GetCurrentWeatherAsync(GetCurrentWeatherInputParams input, CancellationToken cancellationToken = default)
+    public async Task<WeatherStackCurrentResponse> GetCurrentWeatherAsync(GetCurrentWeatherInputParams input, CancellationToken cancellationToken = default)
     {
         _logger.LogInformation("Starting GetCurrentWeather process...");
 

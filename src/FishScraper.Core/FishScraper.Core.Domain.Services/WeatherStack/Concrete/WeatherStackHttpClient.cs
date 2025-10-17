@@ -23,14 +23,14 @@ internal sealed class WeatherStackHttpClient: IWeatherStackHttpClient
         _weatherStackConfig = weatherStackConfig;
         _logger = logger;
     }
-    public async Task<WeatherStackResponse> GetCurrentWeatherAsync(decimal latitude, decimal longitude, WeatherStackUnitsEnum units, CancellationToken ct = default)
+    public async Task<WeatherStackCurrentResponse> GetCurrentWeatherAsync(decimal latitude, decimal longitude, WeatherStackUnitsEnum units, CancellationToken ct = default)
     {
         var response = await _weatherStackConfig.BaseUrl
             .AppendPathSegment("current")
             .AppendQueryParameter("access_key", _weatherStackConfig.ApiKey)
             .AppendQueryParameter("query", $"{latitude},{longitude}")
             .AppendQueryParameter("units", units.GetDisplayName())
-            .GetWeatherStackJsonAsync<WeatherStackResponse>(_client, _logger, ct);
+            .GetWeatherStackJsonAsync<WeatherStackCurrentResponse>(_client, _logger, ct);
         
         return response ?? throw new ApiServerException("Failed to get current weather stack");
     }
