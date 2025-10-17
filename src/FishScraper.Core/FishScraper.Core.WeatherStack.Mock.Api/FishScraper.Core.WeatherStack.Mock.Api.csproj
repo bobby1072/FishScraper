@@ -17,8 +17,4 @@
     <ProjectReference Include="..\..\Submodules\BT\src\BT.Common\BT.Common.Api.Helpers\BT.Common.Api.Helpers.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
-
 </Project>
