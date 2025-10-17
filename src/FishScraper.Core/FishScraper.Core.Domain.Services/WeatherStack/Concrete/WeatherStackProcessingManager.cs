@@ -2,7 +2,8 @@
 using BT.Common.Api.Helpers.Exceptions;
 using FishScraper.Core.Common.Helpers;
 using FishScraper.Core.Domain.Services.WeatherStack.Abstract;
-using FishScraper.Core.Schemas.WeatherStack;
+using FishScraper.Core.Schemas.WeatherStack.Request;
+using FishScraper.Core.Schemas.WeatherStack.Response;
 using Microsoft.Extensions.Logging;
 
 namespace FishScraper.Core.Domain.Services.WeatherStack.Concrete;

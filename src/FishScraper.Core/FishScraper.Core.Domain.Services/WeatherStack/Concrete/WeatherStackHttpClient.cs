@@ -3,7 +3,7 @@ using BT.Common.Http.Extensions;
 using FishScraper.Core.Common.Configuration;
 using FishScraper.Core.Domain.Services.WeatherStack.Abstract;
 using FishScraper.Core.Domain.Services.WeatherStack.Extensions;
-using FishScraper.Core.Schemas.WeatherStack;
+using FishScraper.Core.Schemas.WeatherStack.Response;
 using Microsoft.Extensions.Logging;
 
 namespace FishScraper.Core.Domain.Services.WeatherStack.Concrete;

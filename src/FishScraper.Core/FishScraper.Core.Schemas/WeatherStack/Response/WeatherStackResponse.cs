@@ -1,4 +1,4 @@
-namespace FishScraper.Core.Schemas.WeatherStack;
+namespace FishScraper.Core.Schemas.WeatherStack.Response;
 
 public sealed record WeatherStackResponse
 {

@@ -1,17 +1,17 @@
-namespace FishScraper.Core.Schemas.WeatherStack;
+namespace FishScraper.Core.Schemas.WeatherStack.Response;
 
 public sealed record WeatherStackCurrent
 {
-    public required string ObservationTime { get; init; }
+    public string? ObservationTime { get; init; }
     public int Temperature { get; init; }
     public int WeatherCode { get; init; }
-    public required string[] WeatherIcons { get; init; }
-    public required string[] WeatherDescriptions { get; init; }
+    public string[] WeatherIcons { get; init; } = [];
+    public string[] WeatherDescriptions { get; init; } = [];
     public required WeatherStackAstro Astro { get; init; }
     public required WeatherStackAirQuality AirQuality { get; init; }
     public int WindSpeed { get; init; }
     public int WindDegree { get; init; }
-    public required string WindDir { get; init; }
+    public string? WindDir { get; init; }
     public int Pressure { get; init; }
     public int Precip { get; init; }
     public int Humidity { get; init; }

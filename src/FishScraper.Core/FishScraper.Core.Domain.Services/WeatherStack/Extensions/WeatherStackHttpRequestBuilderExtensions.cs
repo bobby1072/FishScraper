@@ -2,7 +2,7 @@
 using System.Text.Json;
 using BT.Common.Api.Helpers.Exceptions;
 using BT.Common.Http.Models;
-using FishScraper.Core.Schemas.WeatherStack;
+using FishScraper.Core.Schemas.WeatherStack.Response;
 using Microsoft.Extensions.Logging;
 
 namespace FishScraper.Core.Domain.Services.WeatherStack.Extensions;
@@ -15,6 +15,8 @@ internal static class WeatherStackHttpRequestBuilderExtensions
     {
         try
         {
+            httpRequestBuilder.HttpMethod = HttpMethod.Get;
+            
             using var httpReqMessage = httpRequestBuilder.ToHttpRequestMessage();
             using var httpResponse = await client.SendAsync(httpReqMessage, token);
 

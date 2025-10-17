@@ -1,6 +1,7 @@
 ﻿using BT.Common.Api.Helpers.Models;
 using FishScraper.Core.Domain.Services.WeatherStack.Abstract;
-using FishScraper.Core.Schemas.WeatherStack;
+using FishScraper.Core.Schemas.WeatherStack.Request;
+using FishScraper.Core.Schemas.WeatherStack.Response;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FishScraper.Core.Api.Controllers;
