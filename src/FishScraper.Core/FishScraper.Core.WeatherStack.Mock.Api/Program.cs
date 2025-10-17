@@ -22,6 +22,10 @@ try
     builder.Services.AddResponseCompression();
     builder.Services.AddHealthChecks();
     
+    // Register mock data builder service
+    builder.Services.AddScoped<FishScraper.Core.WeatherStack.Mock.Api.Services.Abstract.IWeatherStackMockDataBuilder, 
+                                FishScraper.Core.WeatherStack.Mock.Api.Services.Concrete.WeatherStackMockDataBuilder>();
+    
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
 
