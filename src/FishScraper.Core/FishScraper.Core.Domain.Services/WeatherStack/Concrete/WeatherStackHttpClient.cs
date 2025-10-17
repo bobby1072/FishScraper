@@ -1,8 +1,10 @@
 ﻿using BT.Common.Api.Helpers.Exceptions;
+using BT.Common.Helpers.Extensions;
 using BT.Common.Http.Extensions;
 using FishScraper.Core.Common.Configuration;
 using FishScraper.Core.Domain.Services.WeatherStack.Abstract;
 using FishScraper.Core.Domain.Services.WeatherStack.Extensions;
+using FishScraper.Core.Schemas.WeatherStack.Request;
 using FishScraper.Core.Schemas.WeatherStack.Response;
 using Microsoft.Extensions.Logging;
 
@@ -21,12 +23,13 @@ internal sealed class WeatherStackHttpClient: IWeatherStackHttpClient
         _weatherStackConfig = weatherStackConfig;
         _logger = logger;
     }
-    public async Task<WeatherStackResponse> GetCurrentWeatherAsync(decimal latitude, decimal longitude, CancellationToken ct = default)
+    public async Task<WeatherStackResponse> GetCurrentWeatherAsync(decimal latitude, decimal longitude, WeatherStackUnitsEnum units, CancellationToken ct = default)
     {
         var response = await _weatherStackConfig.BaseUrl
             .AppendPathSegment("current")
             .AppendQueryParameter("access_key", _weatherStackConfig.ApiKey)
             .AppendQueryParameter("query", $"{latitude},{longitude}")
+            .AppendQueryParameter("units", units.GetDisplayName())
             .GetWeatherStackJsonAsync<WeatherStackResponse>(_client, _logger, ct);
         
         return response ?? throw new ApiServerException("Failed to get current weather stack");

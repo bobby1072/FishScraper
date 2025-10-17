@@ -1,7 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\bobby\\Desktop\\code\\FishScraper\\src\\FishScraper.Core\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Bobby Thompson\\Personal\\FishScraper\\src\\FishScraper.Core\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E68B3534-3FDC-44BE-8D03-1C9499F4BFA2}|FishScraper.Core.WeatherStack.Mock.Api\\FishScraper.Core.WeatherStack.Mock.Api.csproj|c:\\users\\bobby thompson\\personal\\fishscraper\\src\\fishscraper.core\\fishscraper.core.weatherstack.mock.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E68B3534-3FDC-44BE-8D03-1C9499F4BFA2}|FishScraper.Core.WeatherStack.Mock.Api\\FishScraper.Core.WeatherStack.Mock.Api.csproj|solutionrelative:fishscraper.core.weatherstack.mock.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +27,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Bobby Thompson\\Personal\\FishScraper\\src\\FishScraper.Core\\FishScraper.Core.WeatherStack.Mock.Api\\appsettings.json",
+              "RelativeDocumentMoniker": "FishScraper.Core.WeatherStack.Mock.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\Bobby Thompson\\Personal\\FishScraper\\src\\FishScraper.Core\\FishScraper.Core.WeatherStack.Mock.Api\\appsettings.json",
+              "RelativeToolTip": "FishScraper.Core.WeatherStack.Mock.Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-17T14:58:22.119Z",
+              "EditorCaption": ""
             }
           ]
         }

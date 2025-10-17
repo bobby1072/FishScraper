@@ -27,7 +27,7 @@ internal sealed class WeatherStackProcessingManager: IWeatherStackProcessingMana
             throw new ApiClientException(HttpStatusCode.BadRequest, "Invalid Latitude or Longitude");
         }
         
-        var responseFromApi = await _weatherHttpClient.GetCurrentWeatherAsync(input.Latitude, input.Longitude);
+        var responseFromApi = await _weatherHttpClient.GetCurrentWeatherAsync(input.Latitude, input.Longitude, input.Unit, cancellationToken);
         
         _logger.LogInformation("GetCurrentWeather process finished...");
         
