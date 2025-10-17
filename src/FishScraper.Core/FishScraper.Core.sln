@@ -25,6 +25,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mocks", "Mocks", "{A0486DB4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishScraper.Core.WeatherStack.Mock.Api", "FishScraper.Core.WeatherStack.Mock.Api\FishScraper.Core.WeatherStack.Mock.Api.csproj", "{E68B3534-3FDC-44BE-8D03-1C9499F4BFA2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FishScraper.Core.Aspire", "FishScraper.Core.Aspire\FishScraper.Core.Aspire.csproj", "{0A554BF5-366D-4750-BF5C-12F64F0880CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{E68B3534-3FDC-44BE-8D03-1C9499F4BFA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E68B3534-3FDC-44BE-8D03-1C9499F4BFA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E68B3534-3FDC-44BE-8D03-1C9499F4BFA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A554BF5-366D-4750-BF5C-12F64F0880CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A554BF5-366D-4750-BF5C-12F64F0880CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A554BF5-366D-4750-BF5C-12F64F0880CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A554BF5-366D-4750-BF5C-12F64F0880CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

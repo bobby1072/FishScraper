@@ -47,6 +47,19 @@ internal sealed class WeatherStackMockDataBuilder : IWeatherStackMockDataBuilder
         "New Moon", "Waxing Crescent", "First Quarter", "Waxing Gibbous", "Full Moon", "Waning Gibbous", "Last Quarter", "Waning Crescent"
     };
 
+    public WeatherStackErrorResponse CreateErrorResponse()
+    {
+        return new WeatherStackErrorResponse
+        {
+            Error = new WeatherStackInnerErrorResponse
+            {
+                Info = "It failed",
+                Type = "Error",
+                Code = 500
+            },
+            Success = false
+        };
+    }
     public WeatherStackCurrentResponse CreateMockCurrentWeatherResponse(decimal latitude = 40.7128m, decimal longitude = -74.0060m, WeatherStackUnitsEnum units = WeatherStackUnitsEnum.Metric)
     {
         var cityIndex = _random.Next(_cities.Length);

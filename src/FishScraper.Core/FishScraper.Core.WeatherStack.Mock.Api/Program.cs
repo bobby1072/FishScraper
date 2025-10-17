@@ -1,6 +1,8 @@
 using System.Text.Json;
 using BT.Common.Api.Helpers.Extensions;
 using BT.Common.Helpers;
+using FishScraper.Core.WeatherStack.Mock.Api.Services.Abstract;
+using FishScraper.Core.WeatherStack.Mock.Api.Services.Concrete;
 
 var localLogger = LoggingHelper.CreateLogger();
 
@@ -22,12 +24,12 @@ try
     builder.Services.AddResponseCompression();
     builder.Services.AddHealthChecks();
     
-    // Register mock data builder service
-    builder.Services.AddScoped<FishScraper.Core.WeatherStack.Mock.Api.Services.Abstract.IWeatherStackMockDataBuilder, 
-                                FishScraper.Core.WeatherStack.Mock.Api.Services.Concrete.WeatherStackMockDataBuilder>();
-    
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
+
+    
+    builder.Services.AddScoped<IWeatherStackMockDataBuilder, 
+                                WeatherStackMockDataBuilder>();
 
     var app = builder.Build();
 
